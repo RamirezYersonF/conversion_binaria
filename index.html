@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decimal a Binario</title>
+    <script src="jquery.js"></script>
+    <link rel="stylesheet" href="stile.css">
+</head>
+
+<body>
+    <section class="convertir_general">
+            <label for="">Seleccione tipo de Conversion</label><br><br>
+
+            <input type="radio" name="tipo" value="1" checked  onClick="limpiar()">   <label for="">Decimal a Binario</label><br>
+            <input type="radio" name="tipo" value="2" onClick="limpiar()"> <label for="">Binario a Decimal</label><br><br>
+
+            <label for="">Numero a Convertir:</label><br><label id="message"></label><br>
+            <input type="text" id="number" name="number" onkeypress="return solo_num(event)" required><br><br>
+            
+            <input type="button" value="Convertir" onclick="Convert()"><br><br>
+            <label for="" id="resultado"></label>
+</section>
+</body>
+
+  <script src="main.js"></script>
+</html>
